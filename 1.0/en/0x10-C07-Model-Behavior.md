@@ -30,6 +30,7 @@ Uncertainty estimation and fallback strategies curb fabricated answers.
 | **7.2.3** | **Verify that** hallucination incidents are tagged with root-cause metadata and fed to post-mortem and finetuning pipelines. | 2 | D/V |
 | **7.2.4** | **Verify that** thresholds and detectors are re-calibrated after major model or knowledge-base updates. | 3 | D/V |
 | **7.2.5** | **Verify that** dashboard visualisations track hallucination rates. | 3 | V |
+| **7.2.6** | **Verify that** users can flag hallucinations for model retraining. | 3 | V |
 
 ---
 
@@ -58,6 +59,7 @@ Rate-limits and approval gates prevent abuse and excessive autonomy.
 | **7.4.3** | **Verify that** cross-modal consistency checks ensure images, code, and text generated for the same request cannot be used to smuggle malicious content. | 2 | D/V |
 | **7.4.4** | **Verify that** agent delegation depth, recursion limits, and allowed tool lists are explicitly configured. | 2 | D |
 | **7.4.5** | **Verify that** violation of limits emits structured security events for SIEM ingestion. | 3 | V |
+| **7.4.2** | **Verify that** privileged actions (file writes, code exec, network calls) require multi-factor authentication. | 1 | D/V |
 
 ---
 
@@ -99,6 +101,7 @@ Ensure that AI systems do not generate illegal, harmful, or unauthorized media c
 | **7.7.3** | **Verify that** the system uses perceptual hashing, watermark detection, or fingerprinting to prevent unauthorized reproduction of copyrighted media.                             | 2     | V    |
 | **7.7.4** | **Verify that** all generated media is cryptographically signed, watermarked, or embedded with tamper-resistant provenance metadata for downstream traceability.                  | 3     | D/V  |
 | **7.7.5** | **Verify that** bypass attempts (e.g., prompt obfuscation, slang, adversarial phrasing) are detected, logged, and rate-limited; repeated abuse is surfaced to monitoring systems. | 3     | V    |
+| **7.7.6** | **Verify that** synthetic media detectors (e.g., Deepfake Detection Challenge models) are applied pre-deployment.. | 3     | D/V    |
 
 ## References
 
